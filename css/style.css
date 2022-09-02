@@ -42,7 +42,7 @@ header nav {
 }
 
 header nav ul {
-  margin-left: 40%;
+  margin-left: 60%;
 }
 
 header nav ul li {
@@ -138,7 +138,7 @@ header+section span:last-child {
 header+section > section {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 80%;
   margin: 0 0 4.5% 5.2%;
 }
 
@@ -163,7 +163,7 @@ header+section>section span {
 
 /* second section  */
 
-div {
+main + div {
   background: url("https://images.unsplash.com/photo-1611249021021-21220638532e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80") 932px 0 no-repeat;
   background-size: 50%;
 }
@@ -215,13 +215,14 @@ div > a:hover {
 div + section {
   background: #eebb8b;
   /* float: left; */
-  padding: 5%;
+  padding: 2.5%;
   /* width: 100%; */
   /* padding-left: 30%;  */
 }
 
 div + section h1 {
   font-size: 4rem;
+  padding-bottom: 1%;
 }
 
 div + section li {
@@ -289,4 +290,38 @@ div+section section img {
   font-size: 1.2rem;
   padding: 0 2.1px;
   vertical-align: middle;
+}
+
+div + section > span {
+  color: #5b3f39;
+}
+
+/***** // OPENING HOURS // *****/
+
+div+section+section {
+  padding: 2.5%;
+}
+
+div + section + section > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div+section+section>section span {
+  padding: 0.5%;
+}
+
+div+section+section>section h2 {
+  font-size: 3rem;
+  padding-bottom: 0.5%;
+}
+
+div+section+section>section span + span {
+  font-size: 2rem;
+}
+
+div + section + section > div {
+  display: flex;
+  justify-content: center;
 }
