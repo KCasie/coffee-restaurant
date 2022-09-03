@@ -97,7 +97,7 @@ form {
 form input {
   float: left;
   /* display: flex; */
-  width: 10%;
+  width: 150px;
   padding: 15px 150px;
   border: 1px solid lightgray;
   border-radius: 5px 0px 0px 5px;
@@ -114,6 +114,14 @@ form a {
 
 form a:hover {
   background: #ffa43c;
+}
+
+form + section i {
+  color: #ff8800;
+}
+
+form+section span {
+  color: black;
 }
 
 /* input, input + a {
@@ -203,7 +211,13 @@ div > a {
   color: white;
   padding: 16px 40px;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 5px 0 0 5px;
+}
+
+div>a+a {
+  border-radius: 0 5px 5px 0;
+  background: #ffaa4d;
+  padding: 16px;
 }
 
 div > a:hover {
@@ -235,7 +249,6 @@ section li a {
 }
 
 section > span {
-  width: 20%;
   text-align: center;
   color: #ff8800;
   font-weight: 700;
@@ -317,11 +330,87 @@ div+section+section>section h2 {
   padding-bottom: 0.5%;
 }
 
+div+section+section>section h2 + i {
+  padding-top: 20px;
+  color: #ff8800;
+  font-size: 2rem;
+}
+
+div+section+section>section h2+i+span {
+  color: black;
+}
+
 div+section+section>section span + span {
   font-size: 2rem;
 }
 
 div + section + section > div {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
+}
+
+div+section+section>div section {
+  align-items: center;
+  padding: 1% 5%;
+}
+
+div+section+section> div section span {
+  display: block;
+  color: black;
+  font-size: 1rem;
+  text-align: left;
+  padding: 3% 0;
+}
+
+div+section+section>div section span+span {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* last section */
+
+div+section+section+section {
+  background: #5b3f39;
+  padding: 2.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div+section+section+section h3 {
+  font-size: 3rem;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+
+div+section+section+section img {
+  border-radius: 100px;
+}
+
+div+section+section+section img + span {
+  font-size: 2rem;
+  color: black;
+  padding-top: 10px;
+}
+
+div+section+section+section img+span+span {
+  padding-top: 5px;
+  color: #eebb8b;
+}
+
+div+section+section+section p {
+  padding: 2% 20% 1% 20%;
+  text-align: center;
+  line-height: 33px;
+}
+
+/* footer */
+
+footer {
+  background: rgba(255, 255, 255, 0.719);
+  color: black;
+  padding: 2% 1%;
+  text-align: center;
+  font-style: italic;
 }
